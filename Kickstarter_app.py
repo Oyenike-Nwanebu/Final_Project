@@ -7,10 +7,15 @@ import xgboost as xgb
 from sklearn.preprocessing import StandardScaler
 
 
+primaryColor="#6eb52f"
+backgroundColor="#f0f0f5"
+secondaryBackgroundColor="#e0e0ef"
+textColor="#262730"
+font="sans serif"
 
-st.markdown("<h1 style = 'text-align:center; color:green;'>Kickstarter Project Success Prediction</h1>", unsafe_allow_html=True)
-#st.title('Kickstarter Project Success Prediction')
-
+st.markdown("<h1 style = 'text-align:center; color:green;'>Kickstarter Project Success Predictor</h1>", unsafe_allow_html=True)
+st.image('Kickstarter_image.jpeg', caption="Image Credit: www.business2community.com")
+st.header('Because dreams do come true!')
 with st.form(key='my_form'):
     goal_usd = st.number_input('Please enter your project goal in USD', step = 0.10)
 
@@ -125,6 +130,6 @@ if submit_button:
             st.write ('The probability that your project will succeed is', probability)
             
         else:
-            st.write('not succeed :( ')
+            st.write('not succeed :disappointed:')
             st.write ('The probability that your project will succeed is', probability)
             st.write('Please contact us to see how you can boost your chances!')
