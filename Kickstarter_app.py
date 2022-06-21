@@ -13,7 +13,7 @@ secondaryBackgroundColor="#e0e0ef"
 textColor="#262730"
 font="sans serif"
 
-st.markdown("<h1 style = 'text-align:center; color:green;'>Kickstarter Project Success Predictor</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style = 'text-align:center; color:green;'>Kickstarter Campaign Success Predictor</h1>", unsafe_allow_html=True)
 st.image('Kickstarter_image.jpeg', caption="Image Credit: www.business2community.com")
 st.header('Because dreams do come true!')
 with st.form(key='my_form'):
