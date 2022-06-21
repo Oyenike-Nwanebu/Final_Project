@@ -75,8 +75,6 @@ if submit_button:
         else:
             staff_pick = 0
 
-        Art, Comics, Crafts, Dance, Design, Fashion, Film_Video, Food = 0,0,0,0,0,0,0,0
-        Games, Journalism, Music, Photography, Publishing, Technology, Theater=0,0,0,0,0,0,0
 
         #category
         category_list = ['Art', 'Comics', 'Crafts', 'Dance', 'Design', 'Fashion', 'Film_Video', 'Food',
@@ -98,6 +96,8 @@ if submit_button:
             country_onehot[country_list.index(country)] = 1
 
         AU, CA, DE, ES, FR, GB, HK, IT, MX, NL, SE, US, Other = country_onehot
+
+        #convert user input to dataframe
 
         input_variables = pd.DataFrame([[staff_pick, goal_usd, name_count, blurb_count,  
             prep_time, cam_duration, AU, CA, DE, ES, FR, GB, HK, IT, MX, NL, Other, SE, US, Art, 
@@ -126,10 +126,10 @@ if submit_button:
         st.header("Result:")
 
         if result==1:
-            st.write('Successful!')
+            st.write('Congratulations!! This campaign will likely be successful!')
             st.write ('The probability that your project will succeed is', probability)
             
         else:
-            st.write('not succeed :disappointed:')
+            st.write('This campaign will likely fail :disappointed:')
             st.write ('The probability that your project will succeed is', probability)
             st.write('Please contact us to see how you can boost your chances!')
