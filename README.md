@@ -8,7 +8,7 @@ The aim of this project is to predict the success of a Kickstarter project campa
 Data was collected from [web robots website](https://webrobots.io/kickstarter-datasets) which uses a scraper robot to crawl Kickstarter projects once per month.
 
 ### Data Exploration
-For the purpose of this project, only completed projects launched between 25 April 2009 and 11 May 2022 were analyzed. After cleaning the data and removing duplicate campaigns, the dataset had 59.5% sucessful projects and 40.5% failed projects. 
+For the purpose of this project, only completed projects launched between 25 April 2009 and 11 May 2022 were analyzed. After cleaning the data and removing duplicate campaigns, the dataset had 59.5% successful projects and 40.5% failed projects. 
 
 ### Feature Engineering
 Time traveled features such as Spotlight, Number of backers, Amount pledged etc were not used for modeling as the creators will not have access to this information before the campaign launch date.
